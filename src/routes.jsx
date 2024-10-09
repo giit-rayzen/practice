@@ -64,7 +64,7 @@ import TenderUpload from './sections/tenders/TenderUpload';
 import FinancialResult from './sections/investors/FinancialResult';
 import Investors from './sections/investors/Investors';
 import Report from './sections/investors/Report';
-import CompanyInfo from './sections/aboutbsnl/CompanyInfo'
+
 import Achievements from './sections/AboutBSNL/Achievements';
 import Vision from './sections/AboutBSNL/Vision';
 import Staff from './sections/AboutBSNL/Staff';
@@ -108,7 +108,7 @@ function AppRoutes() {
           <Route path='report' element={<Report/>}/>
 
           {/* About BSNL SubRoutes */}
-          <Route path='companyinfo' element={<CompanyInfo/>}/>
+        
           <Route path='achievements' element={<Achievements/>}/>
           <Route path='vision' element={<Vision/>}/>
           <Route path='staff' element={<Staff/>}/>

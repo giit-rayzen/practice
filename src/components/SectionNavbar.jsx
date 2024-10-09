@@ -78,7 +78,7 @@ function SectionNavbar() {
       { name: 'Report', path: 'report' }
     ],
     aboutbsnl:[
-      {name:'About-Us',path:'companyinfo'},
+  
       {name:'Achievements',path:'achievements'},
       {name:'Mission-Vision',path:'vision'},
       {name:'Staff',path:'staff'},
