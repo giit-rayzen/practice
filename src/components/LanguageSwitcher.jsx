@@ -19,7 +19,7 @@ function LanguageSwitcher() {
       <Dropdown.Menu>
         <Dropdown.Item eventKey="English">English</Dropdown.Item>
         <Dropdown.Item eventKey="Hindi">Hindi</Dropdown.Item>
-        {/* Add more languages as needed */}
+        {/* add more language for your choice */}
       </Dropdown.Menu>
     </Dropdown>
   );

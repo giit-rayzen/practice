@@ -57,19 +57,31 @@ function SectionNavbar() {
       { name: 'Prepaid', path: 'prepaid' }
     ],
     fiber: [
-      { name: 'Plans', path: 'plans' },
+      {name:'BSNL-Fiber', path:'getbharatfiber'},
+      { name: 'Prepaid', path: 'prepaidfiber' },
+      { name: 'Postpaid', path: 'postpaidfiber' },
       { name: 'Installation', path: 'installation' },
-      { name: 'Support', path: 'support' }
-    ],
-    '5g': [
-      { name: 'Plans', path: 'plans' },
-      { name: 'Coverage', path: 'coverage' },
-      { name: 'FAQ', path: 'faq' }
     ],
     enterprise: [
       { name: 'Solutions', path: 'solutions' },
       { name: 'Services', path: 'services' },
       { name: 'Support', path: 'support' }
+    ],
+    tenders: [
+      { name: 'Discover', path: 'discover' },
+      { name: 'TenderUpload', path: 'tenderupload' },
+      { name: 'Support', path: 'support' }
+    ],
+    investors: [
+      { name: 'Financial-Result', path: 'financialresult' },
+      { name: 'Investors', path: 'investors' },
+      { name: 'Report', path: 'report' }
+    ],
+    aboutbsnl:[
+      {name:'About-Us',path:'companyinfo'},
+      {name:'Achievements',path:'achievements'},
+      {name:'Mission-Vision',path:'vision'},
+      {name:'Staff',path:'staff'},
     ],
   };
 
@@ -79,6 +91,7 @@ function SectionNavbar() {
         <Nav.Link as={Link} to={link.path} key={link.name}>
           {link.name}
         </Nav.Link>
+        
       ))}
     </Nav>
   );

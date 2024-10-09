@@ -59,6 +59,18 @@ import Support from './sections/enterprise/Support';
 import Installation from './sections/fiber/Installation';
 import Prepaid from './sections/mobile/Prepaid';
 import Solutions from './sections/enterprise/Solutions';
+import Discover from './sections/tenders/Discover'
+import TenderUpload from './sections/tenders/TenderUpload';
+import FinancialResult from './sections/investors/FinancialResult';
+import Investors from './sections/investors/Investors';
+import Report from './sections/investors/Report';
+import CompanyInfo from './sections/aboutbsnl/CompanyInfo'
+import Achievements from './sections/AboutBSNL/Achievements';
+import Vision from './sections/AboutBSNL/Vision';
+import Staff from './sections/AboutBSNL/Staff';
+import GetBharatFiber from './sections/fiber/GetBharatFiber';
+import PrepaidFiber from './sections/fiber/PrepaidFiber'
+import PostpaidFiber from './sections/fiber/PostpaidFiber'
 
 // Add more imports for other sections and sub-sections...
 
@@ -82,6 +94,25 @@ function AppRoutes() {
 
           {/* Fiber sub-routes */}
           <Route path="installation" element={<Installation />} />
+          <Route path="getbharatfiber" element={<GetBharatFiber />} />
+          <Route path="prepaidfiber" element={<PrepaidFiber />} />
+          <Route path="postpaidfiber" element={<PostpaidFiber />} />
+
+          {/* Tenders sub-routes */}
+          <Route path="discover" element={<Discover />} />
+          <Route path="tenderupload" element={<TenderUpload />} />
+
+           {/* Investors sub-routes */}
+           <Route path="financialresult" element={<FinancialResult />} />
+          <Route path="investors" element={<Investors />} />
+          <Route path='report' element={<Report/>}/>
+
+          {/* About BSNL SubRoutes */}
+          <Route path='companyinfo' element={<CompanyInfo/>}/>
+          <Route path='achievements' element={<Achievements/>}/>
+          <Route path='vision' element={<Vision/>}/>
+          <Route path='staff' element={<Staff/>}/>
+
         </Route>
       </Routes>
     </Router>
