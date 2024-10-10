@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from './logo.png'
+
 
 function BSNLNavbar() {
   return (
@@ -25,4 +25,4 @@ function BSNLNavbar() {
   );
 }
 
-export default BSNLNavbar;
+export default BSNLNavbar;  

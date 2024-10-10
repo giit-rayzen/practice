@@ -1,0 +1,25 @@
+.carousel img {
+    height: 300px; /* Set the height of the carousel */
+    object-fit: cover; /* Ensure images cover the entire area without distortion */
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Darken the caption background for readability */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.25rem;
+  }
+  .home-carousel{
+    width:80%;
+    margin:0 auto;
+    padding-top: 20px;
+  }
+  

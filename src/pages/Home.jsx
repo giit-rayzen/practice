@@ -17,6 +17,9 @@ import React from 'react';
 import { useParams,Outlet } from 'react-router-dom';
 import MainNavbar from '../components/Navbar';
 import SectionNavbar from '../components/SectionNavbar';
+import HomeCarousel from '../components/HomeCarousel';
+import Footer from '../components/Footer';
+import CardLayout from './CardLayout';
 
 function Home() {
   const { section } = useParams();  // Get the section from URL
@@ -25,12 +28,17 @@ function Home() {
     <div className='text-align:center'>
     
       <MainNavbar />
-      {<h1>Welcome to BSNL Home Page</h1>}
+      {<h1 className='text-dark'>Welcome to Home Page of <span className='badge bg-primary'>BSNL</span></h1>}
+      <HomeCarousel/> 
+      <CardLayout/>
+     
+      
       {section && <SectionNavbar section={section} />}
       <div className="container mt-5">
         <Outlet/>
        
       </div>
+     <Footer/>
     </div>
   );
 }
