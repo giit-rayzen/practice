@@ -1,0 +1,13 @@
+/* src/styles.css */
+
+/* Highlight dropdown section on hover */
+.hover-highlight:hover {
+  background-color: rgb(191, 181, 181) !important;
+  /* Red background color */
+  color: white !important;
+  /* White text color */
+  border-radius: 5px;
+  /* Optional: Slight rounded corners */
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}

@@ -1,0 +1,17 @@
+/* Achievements.css */
+.card {
+    transition: transform 0.2s;
+    /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge card on hover */
+}
+
+.card-img-top {
+    height: 200px;
+    /* Set a fixed height for images */
+    object-fit: cover;
+    /* Ensure images cover the area */
+}

@@ -12,7 +12,7 @@ import Prepaid from './sections/mobile/Prepaid';
 import Solutions from './sections/enterprise/Solutions';
 import Discover from './sections/tenders/Discover'
 import TenderUpload from './sections/tenders/TenderUpload';
-import FinancialResult from './sections/investors/FinancialResult';
+import FinancialResult from './sections/investors/FinancialResults';
 import Investors from './sections/investors/Investors';
 import Report from './sections/investors/Report';
 
