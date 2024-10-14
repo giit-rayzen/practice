@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles.css'; // Your custom CSS file for styling
 
 function MainNavbar() {
-  // Function to handle dropdown open and close on hover
   const [openDropdown, setOpenDropdown] = useState('');
 
   const handleMouseEnter = (dropdownId) => {
@@ -17,7 +16,7 @@ function MainNavbar() {
   };
 
   return (
-    <Navbar expand="lg" variant="light" style={{ backgroundColor: '#add8e6' }}>
+    <Navbar expand="lg" variant="light" className="fixed-top" style={{ backgroundColor: '#add8e6' }}>
       <Container>
         <Navbar.Brand as={Link} to="/">BSNL</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,7 +27,7 @@ function MainNavbar() {
             <NavDropdown
               title="Mobile"
               id="mobile-nav-dropdown"
-              className="hover-highlight" // Added hover highlight class
+              className="hover-highlight"
               show={openDropdown === 'mobile'}
               onMouseEnter={() => handleMouseEnter('mobile')}
               onMouseLeave={handleMouseLeave}
@@ -42,7 +41,7 @@ function MainNavbar() {
             <NavDropdown
               title="Fiber"
               id="fiber-nav-dropdown"
-              className="hover-highlight" // Added hover highlight class
+              className="hover-highlight"
               show={openDropdown === 'fiber'}
               onMouseEnter={() => handleMouseEnter('fiber')}
               onMouseLeave={handleMouseLeave}
@@ -58,7 +57,7 @@ function MainNavbar() {
             <NavDropdown
               title="Enterprise"
               id="enterprise-nav-dropdown"
-              className="hover-highlight" // Added hover highlight class
+              className="hover-highlight"
               show={openDropdown === 'enterprise'}
               onMouseEnter={() => handleMouseEnter('enterprise')}
               onMouseLeave={handleMouseLeave}
@@ -72,7 +71,7 @@ function MainNavbar() {
             <NavDropdown
               title="Tenders"
               id="tenders-nav-dropdown"
-              className="hover-highlight" // Added hover highlight class
+              className="hover-highlight"
               show={openDropdown === 'tenders'}
               onMouseEnter={() => handleMouseEnter('tenders')}
               onMouseLeave={handleMouseLeave}
@@ -86,7 +85,7 @@ function MainNavbar() {
             <NavDropdown
               title="Investors"
               id="investors-nav-dropdown"
-              className="hover-highlight" // Added hover highlight class
+              className="hover-highlight"
               show={openDropdown === 'investors'}
               onMouseEnter={() => handleMouseEnter('investors')}
               onMouseLeave={handleMouseLeave}
@@ -100,7 +99,7 @@ function MainNavbar() {
             <NavDropdown
               title="About BSNL"
               id="aboutbsnl-nav-dropdown"
-              className="hover-highlight" // Added hover highlight class
+              className="hover-highlight"
               show={openDropdown === 'aboutbsnl'}
               onMouseEnter={() => handleMouseEnter('aboutbsnl')}
               onMouseLeave={handleMouseLeave}

@@ -11,3 +11,7 @@
   transition: background-color 0.3s ease;
   /* Smooth transition */
 }
+
+.body {
+  padding-top: 280px;
+}

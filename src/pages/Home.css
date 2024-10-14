@@ -1,4 +1,17 @@
 /* Home.css */
+body {
+    padding-top: 70px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+
+.custom-fade-in {
+    animation: customFadeIn 2s ease-in-out;
+}
+
 @keyframes customFadeIn {
     from {
         opacity: 0;
@@ -9,8 +22,4 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.custom-fade-in {
-    animation: customFadeIn 2s ease-in-out;
 }

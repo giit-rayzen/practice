@@ -6,6 +6,7 @@ import HomeCarousel from '../components/HomeCarousel';
 import Footer from '../components/Footer';
 import CardLayout from './CardLayout';
 import 'animate.css'; // Import Animate.css for animations
+import './Home.css'; // Import your custom CSS for Home page
 
 function Home() {
   const { section } = useParams();  // Get the section from URL
@@ -13,30 +14,34 @@ function Home() {
   return (
     <div className="text-center">
 
-      {/* Main Navbar */}
+      {/* Main Navbar (Fixed) */}
       <MainNavbar />
 
-      {/* Animated Heading */}
-      <h1 className="text-dark animate__animated animate__fadeInDown">
-        Welcome to Home Page of <span className="badge bg-primary">BSNL</span>
-      </h1>
+      {/* Main Content */}
+      <div className="container">
 
-      {/* Carousel with Slide Animation */}
-      <div className="animate__animated animate__slideInLeft">
-        <HomeCarousel />
-      </div>
+        {/* Animated Heading */}
+        <h1 className="text-dark animate__animated animate__fadeInDown custom-fade-in">
+          Welcome to Home Page of <span className="badge bg-primary">BSNL</span>
+        </h1>
 
-      {/* Card Layout with Zoom Animation */}
-      <div className="animate__animated animate__zoomIn">
-        <CardLayout />
-      </div>
+        {/* Carousel with Slide Animation */}
+        <div className="animate__animated animate__slideInLeft">
+          <HomeCarousel />
+        </div>
 
-      {/* Section Navbar if applicable */}
-      {section && <SectionNavbar section={section} />}
+        {/* Card Layout with Zoom Animation */}
+        <div className="animate__animated animate__zoomIn">
+          <CardLayout />
+        </div>
 
-      {/* Render dynamic content */}
-      <div className="container mt-5">
-        <Outlet />
+        {/* Section Navbar if applicable */}
+        {section && <SectionNavbar section={section} />}
+
+        {/* Dynamic content from other routes */}
+        <div className="mt-5">
+          <Outlet />
+        </div>
       </div>
 
       {/* Footer */}
