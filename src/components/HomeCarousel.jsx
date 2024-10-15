@@ -2,14 +2,15 @@ import React from 'react'
 import logo from './logo.png'
 import logo2 from './logo2.jpg'
 import logo3 from './logo3.jpg'
-//import './carousel.css'
+
+import loy from './loy.jpg'
 
 const HomeCarousel = () => {
   return (
     <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-ride="carousel"  data-bs-touch="false" >
   <div className="carousel-inner">
     <div className="carousel-item active">
-     <img src={logo3} className="d-block w-90" alt="..." />
+     <img src={loy} className="d-block w-90" alt="..." />
     </div>
     <div className="carousel-item">
       <img src={logo2} className="d-block w-90" alt="..." />

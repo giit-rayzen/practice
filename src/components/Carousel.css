@@ -1,10 +1,10 @@
 .carousel img {
-    height: 300px; /* Set the height of the carousel */
-    object-fit: cover; /* Ensure images cover the entire area without distortion */
+    height: 300px;
+    object-fit: cover; 
   }
   
   .carousel-caption {
-    background: rgba(0, 0, 0, 0.6); /* Darken the caption background for readability */
+    background: rgba(0, 0, 0, 0.6);
     padding: 10px;
     border-radius: 5px;
   }

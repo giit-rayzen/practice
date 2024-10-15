@@ -24,7 +24,7 @@ import PrepaidFiber from './sections/fiber/PrepaidFiber'
 import PostpaidFiber from './sections/fiber/PostpaidFiber'
 import MainLayout from './layouts/MainLayout';
 
-// Add more imports for other sections and sub-sections...
+
 
 function AppRoutes() {
   return (
