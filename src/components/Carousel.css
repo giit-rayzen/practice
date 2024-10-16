@@ -1,61 +1,25 @@
 .carousel img {
-  height: 450px;
-  /* Adjusted height for better proportion */
-  object-fit: cover;
-  /* Ensure images cover the entire area without distortion */
-}
-
-.carousel-indicators li {
-  background-color: #000;
-  /* Customize indicator color */
-}
-
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  /* Slightly transparent background for caption */
-  padding: 10px;
-  /* Reduced padding for a more compact look */
-  border-radius: 5px;
-  /* Slightly smaller border radius */
-  position: absolute;
-  /* Positioning the caption */
-  bottom: 20px;
-  /* Space from the bottom */
-  left: 50%;
-  /* Center the caption horizontally */
-  transform: translateX(-50%);
-  /* Adjust to center */
-  max-width: 80%;
-  /* Limit the width of the caption */
-}
-
-.carousel-caption h3 {
-  font-size: 1.5rem;
-  /* Reduced font size for the title */
-  font-weight: bold;
-}
-
-.carousel-caption p {
-  font-size: 1rem;
-  /* Reduced font size for the paragraph */
-}
-
-.home-carousel {
-  width: 100%;
-  /* Make carousel take full width */
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: black;
-  /* Better visibility for controls */
-  border-radius: 50%;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-  /* Adjust size of control buttons */
-}
+    height: 300px; /* Set the height of the carousel */
+    object-fit: cover; /* Ensure images cover the entire area without distortion */
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Darken the caption background for readability */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.25rem;
+  }
+  .home-carousel{
+    width:80%;
+    margin:0 auto;
+    padding-top: 20px;
+  }
+  
