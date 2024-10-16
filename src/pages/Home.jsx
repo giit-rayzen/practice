@@ -45,6 +45,7 @@ function Home() {
       </div>
 
       {/* Footer */}
+      <h3>Updating soon !</h3>
       <Footer />
     </div>
   );
